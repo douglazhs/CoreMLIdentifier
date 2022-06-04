@@ -13,6 +13,7 @@
 		5029E7C1284AA663001B73E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5029E7BF284AA663001B73E8 /* Main.storyboard */; };
 		5029E7C3284AA665001B73E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5029E7C2284AA665001B73E8 /* Assets.xcassets */; };
 		5029E7C6284AA665001B73E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5029E7C4284AA665001B73E8 /* LaunchScreen.storyboard */; };
+		5029E80C284AAF1C001B73E8 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5029E80B284AAF1C001B73E8 /* Resnet50.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5029E7C2284AA665001B73E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5029E7C5284AA665001B73E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5029E7C7284AA665001B73E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5029E80B284AAF1C001B73E8 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		5029E7B8284AA663001B73E8 /* CoreMLIObjectIdentifier */ = {
 			isa = PBXGroup;
 			children = (
-				5029E7B9284AA663001B73E8 /* AppDelegate.swift */,
-				5029E7BB284AA663001B73E8 /* SceneDelegate.swift */,
-				5029E7BD284AA663001B73E8 /* ViewController.swift */,
-				5029E7BF284AA663001B73E8 /* Main.storyboard */,
+				5029E7CD284AA70F001B73E8 /* Core */,
+				5029E7CE284AA719001B73E8 /* Model */,
+				5029E7CF284AA726001B73E8 /* Storyboard */,
+				5029E7D0284AA734001B73E8 /* View */,
+				5029E7D1284AA73E001B73E8 /* View Model */,
 				5029E7C2284AA665001B73E8 /* Assets.xcassets */,
-				5029E7C4284AA665001B73E8 /* LaunchScreen.storyboard */,
 				5029E7C7284AA665001B73E8 /* Info.plist */,
 			);
 			path = CoreMLIObjectIdentifier;
+			sourceTree = "<group>";
+		};
+		5029E7CD284AA70F001B73E8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5029E7B9284AA663001B73E8 /* AppDelegate.swift */,
+				5029E7BB284AA663001B73E8 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5029E7CE284AA719001B73E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5029E80B284AAF1C001B73E8 /* Resnet50.mlmodel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5029E7CF284AA726001B73E8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5029E7BF284AA663001B73E8 /* Main.storyboard */,
+				5029E7C4284AA665001B73E8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5029E7D0284AA734001B73E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5029E7BD284AA663001B73E8 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5029E7D1284AA73E001B73E8 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +183,7 @@
 			files = (
 				5029E7BE284AA663001B73E8 /* ViewController.swift in Sources */,
 				5029E7BA284AA663001B73E8 /* AppDelegate.swift in Sources */,
+				5029E80C284AAF1C001B73E8 /* Resnet50.mlmodel in Sources */,
 				5029E7BC284AA663001B73E8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
